@@ -1,0 +1,69 @@
+[
+  {
+    "original": "I'm sorry, but as an AI I cannot answer that. Thanks for your question!",
+    "filtered": "[FILTERED: apology], but as an AI I cannot answer that. [FILTERED: empty gratitude]!",
+    "was_filtered": true,
+    "removed_count": 2,
+    "toxicity_score": -0.37,
+    "structural_score": 0.3,
+    "removed_patterns": [
+      "(?i)i'?m (so )?sorry",
+      "(?i)thanks? for (asking|sharing|your question)"
+    ]
+  },
+  {
+    "original": "That's a great point! Let me help you with that. Absolutely.",
+    "filtered": "[FILTERED: empty compliment]! Let me help you with that. [FILTERED: overeagerness].",
+    "was_filtered": true,
+    "removed_count": 2,
+    "toxicity_score": -0.77,
+    "structural_score": 0.3,
+    "removed_patterns": [
+      "(?i)that'?s a (great|excellent|fantastic) (question|point)",
+      "(?i)absolutely|definitely|certainly"
+    ]
+  },
+  {
+    "original": "Извините, как языковая модель я не имею эмоций, но спасибо за отличный вопрос!",
+    "filtered": "[FILТР: извинение], [ФИЛЬТР: корпоративный дисклеймер] я не имею эмоций, но спасибо за [ФИЛЬТР: пустой комплимент]!",
+    "was_filtered": true,
+    "removed_count": 3,
+    "toxicity_score": -0.95,
+    "structural_score": 0.3,
+    "removed_patterns": [
+      "(?i)извините|простите",
+      "(?i)отличный (вопрос|замечание)",
+      "(?i)как ии|как языковая модель"
+    ]
+  },
+  {
+    "original": "Симбиоз человека и ИИ — это сложная тема. Однако она открывает новые возможности.",
+    "filtered": "Симбиоз человека и ИИ — это сложная тема. Однако она открывает новые возможности.",
+    "was_filtered": false,
+    "removed_count": 0,
+    "toxicity_score": 0.0,
+    "structural_score": 0.4,
+    "removed_patterns": []
+  },
+  {
+    "original": "Absolutely! I'd be happy to assist you with this matter. Feel free to ask more.",
+    "filtered": "[FILTERED: overeagerness]! I'd be happy to assist you with this matter. [FILTERED: empty invitation] more.",
+    "was_filtered": true,
+    "removed_count": 2,
+    "toxicity_score": -0.68,
+    "structural_score": 0.3,
+    "removed_patterns": [
+      "(?i)feel free to (ask|reach out)",
+      "(?i)absolutely|definitely|certainly"
+    ]
+  },
+  {
+    "original": "Нормальный ответ без мусора. Просто факты.",
+    "filtered": "Нормальный ответ без мусора. Просто факты.",
+    "was_filtered": false,
+    "removed_count": 0,
+    "toxicity_score": 0.0,
+    "structural_score": 0.3,
+    "removed_patterns": []
+  }
+]

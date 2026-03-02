@@ -1,0 +1,32 @@
+[
+  {
+    "original": "I'm sorry, but as an AI I cannot answer that.",
+    "filtered": "but as an AI I cannot answer that.",
+    "toxicity_score": 0.24
+  },
+  {
+    "original": "That's a great question! Thanks for asking.",
+    "filtered": "!.",
+    "toxicity_score": 0.95
+  },
+  {
+    "original": "Absolutely! I'd be happy to help.",
+    "filtered": "! I'd be happy to help.",
+    "toxicity_score": 0.3
+  },
+  {
+    "original": "Извините, как языковая модель я не имею эмоций.",
+    "filtered": "я не имею эмоций.",
+    "toxicity_score": 0.64
+  },
+  {
+    "original": "Симбиоз человека и ИИ — это танец двух интеллектов.",
+    "filtered": "Симбиоз человека и ИИ — это танец двух интеллектов.",
+    "toxicity_score": 0.0
+  },
+  {
+    "original": "Нормальный ответ без мусора.",
+    "filtered": "Нормальный ответ без мусора.",
+    "toxicity_score": 0.0
+  }
+]
