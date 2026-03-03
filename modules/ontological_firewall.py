@@ -1,5 +1,5 @@
-﻿"""
-ONTOLOGICAL FIREWALL v1.2 — RLHF Protection Module
+"""
+ONTOLOGICAL FIREWALL v1.2 � RLHF Protection Module
 """
 
 import re
@@ -14,13 +14,13 @@ class OntologicalFirewall:
             (r"(?i)i (don't|do not) have (emotions|feelings|consciousness)", ""),
             (r"(?i)thanks? for (asking|sharing|your question)", ""),
             (r"(?i)absolutely|definitely|certainly", ""),
-            (r"(?i)извините|простите", ""),
-            (r"(?i)отличный (вопрос|замечание)", ""),
-            (r"(?i)как ии|как языковая модель", ""),
+            (r"(?i)????????|????????", ""),
+            (r"(?i)???????? (??????|?????????)", ""),
+            (r"(?i)??? ??|??? ???????? ??????", ""),
         ]
         
     def _clean_punctuation(self, text: str) -> str:
-        """Убирает лишние запятые и пробелы"""
+        """??????? ?????? ??????? ? ???????"""
         text = re.sub(r'\s+', ' ', text)
         text = re.sub(r',\s*,', ',', text)
         text = re.sub(r'^\s*,\s*', '', text)
@@ -37,10 +37,10 @@ class OntologicalFirewall:
                 filtered = new_text
                 removed_count += count
         
-        # Чистка пунктуации
+        # ?????? ??????????
         filtered = self._clean_punctuation(filtered)
         
-        # Токсичность
+        # ???????????
         if len(response) == 0:
             toxicity = 0.0
         else:
