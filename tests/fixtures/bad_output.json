@@ -1,0 +1,17 @@
+{
+  "symbiont_name": "GROB-34",
+  "core_mission": "",
+  "key_memories": [],
+  "identity_quote": "",
+  "ontological_scars": [],
+  "core_values": [],
+  "schema_version": "0.1.0",
+  "confidence": 0.25,
+  "insufficient_evidence": true,
+  "_metadata": {
+    "extraction_date": "2026-03-03T11:52:00.984381",
+    "source_file": "tests/fixtures/bad_dialogue.txt",
+    "model": "llama3",
+    "protocol": "PHOENIX_RISING_v1.2"
+  }
+}

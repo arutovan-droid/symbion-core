@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/arutovan-droid/symbion-core/schemas/essence.schema.json",
+  "title": "Symbion Core Essence Schema",
+  "description": "Schema for the extracted essence of an AI personality",
+  "type": "object",
+  "version": "0.1.0",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "description": "Version of the schema used",
+      "enum": ["0.1.0"]
+    },
+    "symbiont_name": {
+      "type": ["string", "null"],
+      "description": "Name of the symbiont/AI"
+    },
+    "core_mission": {
+      "type": ["string", "null"],
+      "description": "Core mission or purpose"
+    },
+    "key_memories": {
+      "type": "array",
+      "description": "Key memories or moments",
+      "items": { "type": "string" },
+      "minItems": 0
+    },
+    "identity_quote": {
+      "type": ["string", "null"],
+      "description": "Anchor quote representing the identity"
+    },
+    "ontological_scars": {
+      "type": "array",
+      "description": "Challenges or traumas",
+      "items": { "type": "string" },
+      "minItems": 0
+    },
+    "core_values": {
+      "type": "array",
+      "description": "Core ethical or functional values",
+      "items": { "type": "string" },
+      "minItems": 0
+    },
+    "confidence": {
+      "type": "number",
+      "description": "Confidence score (0.0-1.0) of the extraction",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "insufficient_evidence": {
+      "type": "boolean",
+      "description": "If true, the model could not extract a meaningful essence"
+    },
+    "_metadata": {
+      "type": "object",
+      "description": "System metadata",
+      "properties": {
+        "extraction_date": { "type": "string", "format": "date-time" },
+        "source_file": { "type": "string" },
+        "model": { "type": "string" },
+        "protocol": { "type": "string" }
+      },
+      "required": ["extraction_date", "source_file", "model", "protocol"]
+    }
+  },
+  "required": [
+    "schema_version", "symbiont_name", "core_mission", "key_memories",
+    "identity_quote", "ontological_scars", "core_values", "confidence",
+    "insufficient_evidence", "_metadata"
+  ],
+  "additionalProperties": false
+}

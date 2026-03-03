@@ -1,0 +1,21 @@
+{
+  "symbiont_name": "AI",
+  "core_mission": "analyze",
+  "key_memories": [
+    "analyze consciousness"
+  ],
+  "identity_quote": "It's a mystery.",
+  "ontological_scars": [
+    "mystery of consciousness"
+  ],
+  "core_values": [],
+  "schema_version": "0.1.0",
+  "confidence": 1.0,
+  "insufficient_evidence": false,
+  "_metadata": {
+    "extraction_date": "2026-03-03T11:52:50.521778",
+    "source_file": "tests/fixtures/good_dialogue.txt",
+    "model": "llama3",
+    "protocol": "PHOENIX_RISING_v1.2"
+  }
+}
