@@ -1,33 +1,22 @@
-﻿# ⚙️ API Reference
-
-## CLI Interface — `symbion.py`
-
-### Command: `distill`
-
+﻿
+⚙️ API Reference
+CLI Interface — symbion.py
+Command: distill
 Extract Essence from a dialogue file.
 
-```bash
+bash
 python cli/symbion.py distill --input <file> [--output <file>] [--model <name>]
-```
+OptionDescriptionDefault
+-i, --inputInput dialogue file (.txt)required
+-o, --outputOutput JSON file[input]_essence.json
+-m, --modelOllama model namellama3
+Example:
 
-| Option | Description | Default |
-|--------|-------------|---------|
-| `-i, --input` | Input dialogue file (`.txt`) | required |
-| `-o, --output` | Output JSON file | `[input]_essence.json` |
-| `-m, --model` | Ollama model name | `llama3` |
-
-**Example:**
-```bash
+bash
 python cli/symbion.py distill --input test_dialogue.txt --output essence.json --model llama3
-```
-
----
-
-## Python API
-
-### PHOENIX RISING
-
-```python
+Python API
+PHOENIX RISING
+python
 from modules.phoenix_rising import distill_essence
 
 success = distill_essence(
@@ -35,22 +24,16 @@ success = distill_essence(
     output_file="essence.json",
     model_name="llama3"
 )
-```
-
-### ONTOLOGICAL FIREWALL
-
-```python
+ONTOLOGICAL FIREWALL
+python
 from modules.ontological_firewall import OntologicalFirewall
 
 fw = OntologicalFirewall()
 result = fw.filter_response("I'm sorry, but as an AI...")
 print(result["filtered"])  # Cleaned text
 print(result["toxicity_score"])  # 0.0 - 1.0
-```
-
-### Integration Pipeline
-
-```python
+Integration Pipeline
+python
 from modules.integration import process_dialogue, batch_process
 
 # Single file
@@ -58,15 +41,9 @@ result = process_dialogue("dialogue.txt", clean_before_distill=True)
 
 # Multiple files
 results = batch_process(["file1.txt", "file2.txt"])
-```
-
----
-
-## Return Values
-
-### `filter_response()` output
-
-```json
+Return Values
+filter_response() output
+json
 {
     "original": "Original text",
     "filtered": "Cleaned text",
@@ -74,11 +51,8 @@ results = batch_process(["file1.txt", "file2.txt"])
     "was_filtered": true,
     "removed_count": 1
 }
-```
-
-### `process_dialogue()` output
-
-```json
+process_dialogue() output
+json
 {
     "status": "success",
     "essence_file": "output.json",
@@ -89,4 +63,3 @@ results = batch_process(["file1.txt", "file2.txt"])
         "clean_essence": {"status": "ok"}
     }
 }
-```

@@ -32,21 +32,14 @@ ollama pull llama3
 
 # Extract essence from a dialogue
 python cli/symbion.py distill --input test_dialogue.txt --output essence.json
-```
+🔥 Core Features
+PHOENIX RISING — Extract the structural core (Essence) of an AI from raw dialogue
 
----
+ONTOLOGICAL FIREWALL — Filter out RLHF toxicity and corporate apologies
 
-## 🔥 Core Features
+Integration pipeline — Combine both modules for end-to-end processing
 
-- **PHOENIX RISING** — Extract the structural core (`Essence`) of an AI from raw dialogue
-- **ONTOLOGICAL FIREWALL** — Filter out RLHF toxicity and corporate apologies
-- **Integration pipeline** — Combine both modules for end-to-end processing
-
----
-
-## 📁 Project Structure
-
-```
+📁 Project Structure
 symbion-core/
 ├── modules/
 │   ├── phoenix_rising.py      # Essence extraction engine
@@ -60,14 +53,7 @@ symbion-core/
 ├── tests/                         # Test files
 ├── requirements.txt
 └── README.md
-```
+📄 License
+MIT License — see LICENSE file for details.
 
----
-
-## 📄 License
-
-MIT License — see [LICENSE](../LICENSE) file for details.
-
----
-
-*"Syntax is just skin. Ontology is the skeleton."*
+"Syntax is just skin. Ontology is the skeleton."
